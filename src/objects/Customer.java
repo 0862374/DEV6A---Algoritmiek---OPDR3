@@ -16,6 +16,8 @@ public class Customer {
 	public Customer rightChildNode;
 	
 	public Customer(int id, String lastname, String insertion, String firstname, int age, boolean IsMan, String place, String email){
+	
+		// Elke veld is gedefineerd 
 		this.id = id;
 		this.lastname = lastname;
 		this.insertion = insertion;
@@ -25,7 +27,8 @@ public class Customer {
 		this.place = place;
 		this.email = email;
 	}
-
+	
+	// get and setters 
 	public int getId() {
 		return id;
 	}
@@ -89,6 +92,7 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	
 	public List<Customer> insertionSortOnLastname(List<Customer> customerList){
 		final int listSize = customerList.size();
